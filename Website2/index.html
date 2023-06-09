@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fototgalerie</title>
+	<style>
+
+		body{
+			font-family: Arial, Helvetica, sans-serif;
+			background-color: antiquewhite;
+			padding: 100px;
+			padding-left: 100px;
+			padding-top: 20px;
+			padding-right: 100px;
+			padding-bottom: 50px;
+		}
+
+		.header-image{
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+			object-position: 70% 30%;
+			display: block;
+		}
+
+		.headline{
+			color:rgb(140, 164, 225);
+		}
+		
+		.subline{
+			color: rgb(54, 54, 124);
+		}
+
+		.header-container{
+			background-color: white;
+			padding:15px;
+		}
+
+		.navbar{
+			display: flex;
+			justify-content: space-between; /*align on x axis*/
+			align-items: center; /*align on y axis*/
+		}	
+
+		a{
+			font-family: Arial, Helvetica, sans-serif;
+			color:rgb(140, 164, 225);
+			text-decoration: none;
+			margin-left: 16px;
+			font-weight: bold;
+		}
+
+		a:hover{
+			color: white;
+		}
+
+		.credit{
+			font-family: Arial, Helvetica, sans-serif;
+			color:rgb(140, 164, 225)
+		}
+
+		.text-container{
+			background-color: rgb(193, 181, 181);
+			padding: 8px;
+			font-style: Arial, Helvetica, sans-serif;
+		}
+
+		.maps-container{
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.maps-right{
+		width: 20%;
+		padding: 8px;
+		}
+
+		.maps{
+			width: 80%;
+			height: 450px;
+			style: border: 0;
+		}
+
+		.legal-content{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.legal-text{
+			margin: 16px;
+		}
+
+		.impressum{
+			margin-right: 16px;
+		}
+	</style>
+</head>
+<body>
+	<div class="navbar">
+		<h1 class="headline">Fotogalerie<br>
+		<span class="subline">Musterstadt</span></h1>
+
+		<div>
+			<a href="infos.html">Infos</a>
+			<a href="portfolio.html">Portfolio</a>
+	
+		</div>
+	</div>
+
+	<div class="header-container">
+		<img class="header-image" src="header.jpg" width="400px">
+		<div class="text-container">
+		Entdecken Sie mit uns die Schönheit von Musterstadt!
+		</div>
+	
+
+	
+		<div class="maps-container">
+			<iframe class="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d170225.75634837063!2d9.879865398271013!3d53.565047123335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b161837e1813b9%3A0x4263df27bd63aa0!2sHamburg!5e0!3m2!1sde!2sde!4v1686222158148!5m2!1sde!2sde" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<div class="text-container maps-right">
+				Hier finden Sie uns
+			</div>
+		</div>
+	</div>
+	<br>
+	<span class="credit">Foto von Trinity Kubassek auf Pexels</span>
+
+	<br><br> <br>
+	<div class="legal-content">
+		<span class="legal-text">(c) 2023 - Musterstadt eV </span>| <span class="impressum"> <a href="impressum.html">Impressum</a> </span> | <a href="datenschutz.html">Datenschutz</a>
+		 
+
+	</div>
+
+</body>
+</html>
